@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+ 
+/* :root {
+    --debug: 1 ;
+}
+
+*,
+*:before,
+*:after {
+outline: calc(var(--debug) * 1px) dotted red;
+}
+ */
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box;  */  
+    list-style: none;
+    text-decoration: none; 
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: #f5f5f5; 
+    font-family: 'Inter', sans-serif;
+}
+
+.wrapper {
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper .top {
+    width: 100%; 
+    height: 10vh;
+    text-align: center; 
+    padding: 3rem 0 3rem 0;
+}
+
+.wrapper .top h2 {
+    font-size: 2.2rem;
+    line-height: 48px;
+    color: #171717;
+    font-weight: 500;
+}
+
+.wrapper .top p {
+    font-size: 1.2rem;
+    line-height: 32px;
+    color: #525252;
+    font-weight: 400;
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background: #fff;
+    width: 300px;
+    height: max-content;
+    margin: 0 16px; 
+    padding: 18px;
+    border-radius: 24px;
+    text-align: start; 
+}
+
+.card h3 {
+    display: flex;
+    align-items: center;
+    
+}
+
+.card h3 svg {
+    width: 24px; 
+}
+
+.svg1 { 
+    fill: #cfcfcf;
+}
+
+.svg2 { 
+    fill: #525252;
+}
+
+.svg3 { 
+    fill: #06b6d4;
+}
+
+.card h3 span{ 
+    font-size: .9rem;
+    color: #525252;
+    line-height: 24px;
+    padding-left: 16px; 
+}
+
+.card-price {
+    font-size: 2rem;
+    line-height: 48px;
+    letter-spacing: -0.8px;
+    color: #171717;
+    margin-top: 20px;
+}
+
+.card-price span {
+    font-size: .9rem;
+    line-height: 24px;
+    letter-spacing: 0.35px;
+    color: #525252;
+    font-weight: 800;
+}
+
+.card .price-sub {
+    font-size: .9rem;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    color: #525252;
+    margin: 4px 0;
+    font-weight: 500;
+}
+
+.card .description {
+    height: 72px;
+    font-size: .9rem;
+    line-height: 24px;
+    color: #404040;
+    margin-top: 12px;
+}
+
+.btn {
+    width: 100%;
+    height: 40px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #f2f2f2;
+    background: #262626;
+    border: none;
+    outline-style: none;
+    box-shadow: none;
+    border-radius: 8px;
+    margin: 12px 0;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #000;
+}
+
+.card li svg {
+    width: 26px; 
+    height: 26px;
+    color: #06b6d4;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.card li {
+    width: 100%;
+    padding: 4px 0;
+    display: inline-flex;
+    position: relative;
+} 
+
+.card li span {
+    padding-left: 16px;
+    color: #404040;
+}
+
+
+/* Active card style */
+
+.card.active {
+    background: #171717; 
+}
+
+.card.active h3 svg {
+    color: #06b6d4;
+}
+
+.card.active .btn {
+    background: #06b6d4;
+}
+
+.card.active .btn:hover {
+    background: #07c4e6;
+}
+
+.card.active li span,
+.card.active .description { 
+    color: #d4d4d4;
+}
+
+.card.active .card-price span,
+.card.active .price-sub {
+    color: #525252; 
+}
+
+.card.active span, 
+.card.active .card-price { 
+    color: #fff;
+}
+ 
